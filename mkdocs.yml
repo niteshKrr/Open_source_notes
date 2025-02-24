@@ -123,3 +123,12 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+    
+  - Linux:
+    - Welcome to Linux: linux/index.md
+  
+    - Linux Commands:
+      - Home: linux/linux_commands/index.md
+      - File & directory management: linux/linux_commands/file_&_dir_management.md
+      - File permissions: linux/linux_commands/file_permissions.md
+          

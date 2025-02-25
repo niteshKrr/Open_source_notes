@@ -90,7 +90,65 @@ chmod -R 755 my_folder
 
 ---
 
-## 2. `chown`Command
+## 2. `group` Command
+
+### Description
+The `group` command in Linux is used to manage user groups. Groups help organize users and manage permissions more efficiently. While there is no direct `group` command, several commands exist to create, modify, and manage groups.
+
+### Group Management Commands
+
+```sh
+groupadd group_name
+```
+> Creates a new group named `group_name`.
+
+```sh
+groupdel group_name
+```
+> Removes the group `group_name`.
+
+```sh
+groupmod -n new_group_name old_group_name
+```
+> Renames `old_group_name` to `new_group_name`.
+
+```sh
+usermod -aG group_name user_name
+```
+> Adds `user_name` to `group_name` without removing them from other groups.
+
+```sh
+gpasswd -d user_name group_name
+```
+> Removes `user_name` from `group_name`.
+
+```sh
+groupmems -l -g group_name
+```
+> Lists all users in `group_name`.
+
+```sh
+groups user_name
+```
+> Displays all groups that `user_name` is a member of.
+
+```sh
+cat /etc/group
+```
+> Displays the list of all groups and their members.
+
+
+---
+💡 **Tip:** Use `sudo` before these commands for administrative tasks!
+```sh
+sudo groupadd developers
+```
+> Creates a `developers` group with administrative privileges.
+
+---
+
+
+## 3. `chown`Command
 
 ### Description
 The `chown` command in Linux is used to **change the ownership** of files and directories. It allows administrators or users with the necessary permissions to modify the owner and group associated with a file.

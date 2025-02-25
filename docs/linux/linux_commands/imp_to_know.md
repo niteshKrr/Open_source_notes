@@ -4,14 +4,14 @@
 
 **Environment variables** are key-value pairs that define system-wide or user-specific configurations. These variables influence how processes and applications behave in the shell.
 
-### **Viewing Environment Variables**
+### Viewing Environment Variables
 ```sh
 printenv
 ```
 > Displays all environment variables.
 
 
-### **Common Environment Variables**
+### Common Environment Variables
 | Variable  | Description |
 |-----------|------------|
 | `$PATH`   | Directories where executables are searched for commands |
@@ -19,15 +19,15 @@ printenv
 | `$SHELL`  | Default shell being used |
 | `$PWD`    | Current working directory |
 
-### **Setting Environment Variables**
+### Setting Environment Variables
 
-#### **Temporarily (valid for the session only)**
+#### Temporarily (valid for the session only)
 ```sh
 export MY_VAR="Hello World"
 ```
 > Sets `MY_VAR` for the current session.
 
-#### **Permanently (valid even after logout)**
+#### Permanently (valid even after logout)
 Add the following line to `~/.bashrc`
 ```sh
 export MY_VAR="Hello World"
@@ -39,25 +39,25 @@ export MY_VAR="Hello World"
 
 An **alias** is a shortcut for a command or a series of commands, allowing you to type less and work efficiently.
 
-### **Creating an Alias**
+### Creating an Alias
 ```sh
 alias ll="ls -lah"
 ```
 > Now typing `ll` runs `ls -lah` (detailed directory listing).
 
-### **Viewing Existing Aliases**
+### Viewing Existing Aliases
 ```sh
 alias
 ```
 > Displays all defined aliases.
 
-### **Removing an Alias**
+### Removing an Alias
 ```sh
 unalias ll
 ```
 > Deletes the alias `ll`.
 
-### **Making Aliases Permanent**
+### Making Aliases Permanent
 
 To keep an alias after logout, add it to `~/.bashrc`
 ```sh
@@ -75,40 +75,40 @@ source ~/.bashrc
 
 `$PATH` is an **environment variable** that stores a list of directories where the system searches for executable files when you enter a command in the terminal. It determines which programs can be run without specifying their full path.  
 
-### **Viewing the `$PATH` Variable**  
+### Viewing the `$PATH` Variable  
 To see your current `PATH`, run:  
 ```sh
 echo $PATH
 ```
 > This displays a colon-separated list of directories.  
 
-#### **Example Output:**  
+#### Example Output: 
 ```
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 Each directory in this list is checked in order when you type a command.  
 
-### **How `$PATH` Works?**  
+### How `$PATH` Works?  
 - If you type `ls`, the system looks in each directory listed in `$PATH` until it finds `/bin/ls`.  
 - If the command is not in any of the directories, you'll see:  
   ```
   command not found
   ```
 
-### **Temporarily Adding a Directory to `$PATH`**  
+### Temporarily Adding a Directory to `$PATH`  
 ```sh
 export PATH=$PATH:/home/user/my_scripts
 ```
 > Adds `/home/user/my_scripts` to `$PATH` for the current session.  
 
-### **Permanently Adding a Directory to `$PATH`**  
+### Permanently Adding a Directory to `$PATH` 
 To make it permanent, add the line to `~/.bashrc`  
 ```sh
 echo 'export PATH=$PATH:/home/user/my_scripts' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### **Key Points**  
+### Key Points
 ✔ `$PATH` stores directories where the system looks for executable files.  
 ✔ Commands in `$PATH` can be run from anywhere.  
 ✔ You can modify `$PATH` to include custom directories.  
@@ -122,13 +122,13 @@ source ~/.bashrc
 ### What is `crontab`?
 `crontab` (cron table) is a file that stores scheduled jobs for a user or system.
 
-### **Viewing the Current Cron Jobs**
+### Viewing the Current Cron Jobs
 ```sh
 crontab -l
 ```
 > Displays the list of scheduled jobs for the current user.
 
-### **Editing the Cron Jobs**
+### Editing the Cron Jobs
 ```sh
 crontab -e
 ```
@@ -191,6 +191,63 @@ crontab -r
 | `@weekly`  | Runs once a week (`0 0 * * 0`) |
 | `@monthly` | Runs once a month (`0 0 1 * *`) |
 | `@yearly`  | Runs once a year (`0 0 1 1 *`) |
+
+---
+
+## 5. History Command in Linux
+
+The `history` command in Linux allows users to view previously executed commands in the terminal. It helps in tracking past commands and re-executing them easily.
+
+### Viewing Command History
+```sh
+history
+```
+> Displays a list of previously executed commands with line numbers.
+
+### Searching Command History
+```sh
+Ctrl + R
+```
+> Starts a reverse search. Type a keyword to find a previously used command.
+
+### Clearing Command History
+```sh
+history -c
+```
+> Clears the entire history.
+
+```sh
+history -d <line_number>
+```
+> Deletes a specific command from history.
+
+### Saving and Reloading Command History
+```sh
+history -w
+```
+> Saves the current session’s history to the history file.
+
+```sh
+history -r
+```
+> Reloads the history from the saved history file.
+
+---
+
+### Managing Persistent History
+Linux stores command history in a file called `.bash_history`. You can view it using:
+```sh
+cat ~/.bash_history
+```
+
+To ensure that commands are saved immediately to history, use:
+```sh
+export HISTCONTROL=ignoredups:erasedups  # No duplicate entries
+export HISTSIZE=1000  # Set history size
+export HISTFILESIZE=2000  # Set history file size
+shopt -s histappend  # Append to history file, rather than overwrite
+history -a  # Append new history lines to history file
+```
 
 ---
 

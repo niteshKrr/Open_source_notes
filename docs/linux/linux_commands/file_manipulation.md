@@ -12,7 +12,7 @@ cat [options] [file]
 The `cat` command is used to **view, create, and concatenate** files.
 
 
-### Example Usage
+### Examples
 
 ```sh
 cat file.txt
@@ -48,11 +48,56 @@ cat file1.txt >> file2.txt
 ```
 > Appends `file1.txt` content to `file2.txt` without overwriting.
 
+---
+
+## 2. `sort` - Sort Lines in a File
+
+### Syntax
+```sh
+sort [options] [file]
+```
+
+### Description
+The `sort` command **sorts lines in a file in ascending or descending order**.
+
+### Common Options
+| Option | Description |
+|--------|------------|
+| `-r`   | Sort in reverse order |
+| `-n`   | Sort numerically |
+| `-u`   | Remove duplicate lines |
+| `-k`   | Sort based on a specific column |
+
+### Examples
+```sh
+sort file.txt
+```
+> Sorts the lines in `file.txt` in ascending order.
+
+```sh
+sort -r file.txt
+```
+> Sorts the lines in `file.txt` in descending order.
+
+```sh
+sort -n numbers.txt
+```
+> Sorts the numbers in `numbers.txt` in numerical order.
+
+```sh
+sort -u file.txt
+```
+> Sorts and removes duplicate lines from `file.txt`.
+
+```sh
+sort -k2 file.txt
+```
+> Sorts `file.txt` based on the second column.
 
 
 ---
 
-## 2. `nano` - Text Editor
+## 3. `nano` - Text Editor
 
 ### Syntax
 ```sh
@@ -70,7 +115,7 @@ The `nano` is a simple, **user-friendly text editor** used for modifying text fi
 | `CTRL + K` | Cut a line |
 | `CTRL + U` | Paste a line |
 
-### Example Usage
+### Examples
 ```sh
 nano myfile.txt
 ```

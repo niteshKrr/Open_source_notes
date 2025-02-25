@@ -131,7 +131,8 @@ nav:
       - Home: linux/linux_commands/index.md
       - File & directory management: linux/linux_commands/file_&_dir_management.md
       - File permissions: linux/linux_commands/file_permissions.md
-      - File Manipulation: linux/linux_commands/file_manipulation.md
+      - File manipulation: linux/linux_commands/file_manipulation.md
       - Searching and filtering: linux/linux_commands/searching_&_filtering.md
-      - File Viewing: linux/linux_commands/file_viewing.md
+      - File viewing: linux/linux_commands/file_viewing.md
+      - Pipe operator: linux/linux_commands/pipe_operator.md
           

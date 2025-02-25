@@ -11,7 +11,7 @@ head [options] [file]
 ### Description
 The `head` command **displays the first 10 lines of a file by default**.
 
-### Example Usage
+### Examples
 ```sh
 head file.txt
 ```
@@ -34,7 +34,7 @@ tail [options] [file]
 ### Description
 The `tail` command **displays the last 10 lines of a file by default**.
 
-### Example Usage
+### Examples
 ```sh
 tail file.txt
 ```
@@ -58,7 +58,7 @@ less [file]
 ### Description
 The `less` command allows **viewing large files page by page**.
 
-### Example Usage
+### Examples
 ```sh
 less file.txt
 ```
@@ -81,7 +81,7 @@ more [file]
 ### Description
 The `more` command is used to **view file content one page at a time**.
 
-### Example Usage
+### Examples
 ```sh
 more file.txt
 ```
@@ -99,7 +99,7 @@ nl [file]
 ### Description
 The `nl` command **displays a file with numbered lines**.
 
-### Example Usage
+### Examples
 ```sh
 nl file.txt
 ```

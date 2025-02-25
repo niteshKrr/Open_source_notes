@@ -10,7 +10,7 @@ man [command_name]
 ### Description
 The `man` command displays the manual (help documentation) for a specified Linux command. It provides detailed information, including syntax, options, examples, and descriptions.
 
-### Example Usage
+### Examples
 ```sh
 man ls
 ```
@@ -56,7 +56,7 @@ pwd
 ### Description
 The `pwd` command prints the full path of the current working directory.
 
-### Example
+### Examples
 ```sh
 pwd
 ```
@@ -133,7 +133,7 @@ touch [options] filename
 ### Description
 The `touch` command creates an empty file or updates the timestamp of an existing file.
 
-### Example Usage
+### Examples
 ```sh
 touch myfile.txt
 ```
@@ -152,7 +152,7 @@ file [options] filename
 ### Description
 The `file` command determines the type of a file based on its content, rather than its extension.
 
-### Example Usage
+### Examples
 ```sh
 file myfile.txt
 ```
@@ -177,7 +177,7 @@ The `rm` command is used to **delete files and directories**.
 | `-r`   | Remove directories and their contents recursively |
 | `-f`   | Force delete files without confirmation |
 
-### Example Usage
+### Examples
 ```sh
 rm file.txt
 ```
@@ -200,7 +200,7 @@ mv [source] [destination]
 ### Description
 The `mv` command is used to **move or rename** files and directories.
 
-### Example Usage
+### Examples
 ```sh
 mv oldname.txt newname.txt
 ```
@@ -224,7 +224,7 @@ cp [options] [source] [destination]
 The `cp` command is used to **copy files and directories**.
 
 
-### Example Usage
+### Examples
 ```sh
 cp file.txt backup.txt
 ```

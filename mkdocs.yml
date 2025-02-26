@@ -136,4 +136,10 @@ nav:
       - File viewing: linux/linux_commands/file_viewing.md
       - Pipe operator: linux/linux_commands/pipe_operator.md
       - Important to know: linux/linux_commands/imp_to_know.md
+        
+    
+
+    - Shell/Bash Scripting:
+      - Home: linux/bash_or_shell_scripting/index.md
+      - Intriduction: linux/bash_or_shell_scripting/introduction.md
           

@@ -142,4 +142,7 @@ nav:
     - Shell/Bash Scripting:
       - Home: linux/bash_or_shell_scripting/index.md
       - Intriduction: linux/bash_or_shell_scripting/introduction.md
+      - Essential Constructs:
+        - Variables: linux/bash_or_shell_scripting/essential_construct/variables.md
+        - Read Command & Command-Line Arguments: linux/bash_or_shell_scripting/essential_construct/read_command_and_command-line_arguments.md
           

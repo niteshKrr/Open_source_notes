@@ -1,4 +1,4 @@
-# Read Command & Command-Line Arguments in Bash
+# Read Command & Command-Line Arguments
 
 ## 1. Read Command
 

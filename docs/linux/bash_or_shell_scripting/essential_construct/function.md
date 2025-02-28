@@ -85,7 +85,7 @@ check_even() {
 }
 
 check_even 4
-if [ $? -eq 0 ]; then
+if [[ $? -eq 0 ]]; then
     echo "Even number"
 else
     echo "Odd number"

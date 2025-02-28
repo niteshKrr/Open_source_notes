@@ -1,29 +1,29 @@
 # Welcome to My Open Source Notes :bulb:
 
 
-![loading...](./images/dp-photoaidcom-cropped.jpeg)
+![loading...](./images/opensource.png)
 
-=== "C"
 
-    ``` c
-    #include <stdio.h>
+=== "Golang"
 
-    int main() {
-      printf("Hello world!\n");
-      return 0;
+    ``` go
+    package main
+
+    import "fmt";
+
+    func main() {
+        fmt.Println("Hello world!")
     }
+
     ```
 
-=== "C++"
+=== "Bash"
 
-    ``` c++
-    #include <iostream>
-    using namespace std;
+    ``` shell
+    #!/bin/bash
 
-    int main() {
-      cout << "Hello world!" <<endl;
-      return 0;
-    }
+    echo "Hello world!"
+
     ```
 
 

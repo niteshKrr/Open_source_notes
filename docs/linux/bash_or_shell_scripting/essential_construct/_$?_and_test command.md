@@ -54,7 +54,7 @@ It can be used in three ways :-<br>
 a=10
 b=20
 
-if [ ${a} -lt ${b} ]; then
+if [[ ${a} -lt ${b} ]]; then
     echo "${a} is less than ${b}"
 fi
 ```
@@ -75,7 +75,7 @@ fi
 str1="hello"
 str2="world"
 
-if [ "${str1}" = "${str2}" ]; then
+if [[ "${str1}" = "${str2}" ]]; then
     echo "Strings are equal"
 else
     echo "Strings are not equal"
@@ -96,7 +96,7 @@ fi
 #!/bin/bash
 file="testfile.txt"
 
-if [ -f "${file}" ]; then
+if [[ -f "${file}" ]]; then
     echo "${file} exists"
 else
     echo "${file} does not exist"
@@ -152,7 +152,7 @@ Exit status: 2
 #!/bin/bash
 mkdir test_directory
 
-if [ $? -eq 0 ]; then
+if [[ $? -eq 0 ]]; then
     echo "Directory created successfully"
 else
     echo "Failed to create directory"
@@ -164,7 +164,7 @@ fi
 #!/bin/bash
 ping -c 1 google.com
 
-if [ $? -eq 0 ]; then
+if [[ $? -eq 0 ]]; then
     echo "Internet connection is working"
 else
     echo "No internet connection"

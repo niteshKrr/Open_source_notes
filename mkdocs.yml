@@ -129,11 +129,12 @@ nav:
   
     - Linux Commands:
       - Home: linux/linux_commands/index.md
-      - File & directory management: linux/linux_commands/file_&_dir_management.md
-      - File permissions: linux/linux_commands/file_permissions.md
-      - File manipulation: linux/linux_commands/file_manipulation.md
-      - Searching and filtering: linux/linux_commands/searching_&_filtering.md
-      - File viewing: linux/linux_commands/file_viewing.md
+      - Essential Constructs:
+        - File & directory management: linux/linux_commands/essential_construct/file_&_dir_management.md
+        - File permissions: linux/linux_commands/essential_construct/file_permissions.md
+        - File manipulation: linux/linux_commands/essential_construct/file_manipulation.md
+        - Searching and filtering: linux/linux_commands/essential_construct/searching_&_filtering.md
+        - File viewing: linux/linux_commands/essential_construct/file_viewing.md
       - Pipe operator: linux/linux_commands/pipe_operator.md
       - Important to know: linux/linux_commands/imp_to_know.md
         
@@ -149,4 +150,8 @@ nav:
         - Functions in bash: linux/bash_or_shell_scripting/essential_construct/function.md
         - Test command and $?: linux/bash_or_shell_scripting/essential_construct/_$?_and_test command.md
         - Conditional Statements: linux/bash_or_shell_scripting/essential_construct/conditional_statement.md
+        - Loops: linux/bash_or_shell_scripting/essential_construct/loops.md
+        - Nested Loops: linux/bash_or_shell_scripting/essential_construct/nested_loop.md
+      - Important to know: linux/bash_or_shell_scripting/imp_to_know.md
+      - Debugging Shell Scripts: linux/bash_or_shell_scripting/debugging_shell_script.md
           

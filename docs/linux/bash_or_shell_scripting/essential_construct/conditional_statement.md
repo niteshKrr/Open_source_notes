@@ -9,7 +9,7 @@ The `if` statement executes a block of code **only if** the condition is true.
 
 ### Syntax
 ```bash
-if [ condition ]; then
+if [[ condition ]]; then
     # Commands to execute if condition is true
 fi
 ```
@@ -19,7 +19,7 @@ fi
 #!/bin/bash
 num=10
 
-if [ ${num} -gt 5 ]; then
+if [[ ${num} -gt 5 ]]; then
     echo "Number is greater than 5"
 fi
 ```
@@ -31,7 +31,7 @@ The `if-else` statement allows executing an alternative block of code if the con
 
 ### Syntax
 ```bash
-if [ condition ]; then
+if [[ condition ]]; then
     # Commands if condition is true
 else
     # Commands if condition is false
@@ -43,7 +43,7 @@ fi
 #!/bin/bash
 num=3
 
-if [ ${num} -gt 5 ]; then
+if [[ ${num} -gt 5 ]]; then
     echo "Number is greater than 5"
 else
     echo "Number is less than or equal to 5"
@@ -57,9 +57,9 @@ The `if-elif-else` statement is used when there are **multiple conditions** to c
 
 ### Syntax
 ```bash
-if [ condition1 ]; then
+if [[ condition1 ]]; then
     # Commands if condition1 is true
-elif [ condition2 ]; then
+elif [[ condition2 ]]; then
     # Commands if condition2 is true
 else
     # Commands if no conditions are true
@@ -71,9 +71,9 @@ fi
 #!/bin/bash
 num=0
 
-if [ ${num} -gt 0 ]; then
+if [[ ${num} -gt 0 ]]; then
     echo "Number is positive"
-elif [ ${num} -lt 0 ]; then
+elif [[ ${num} -lt 0 ]]; then
     echo "Number is negative"
 else
     echo "Number is zero"
@@ -125,14 +125,14 @@ Bash does not have a ternary operator (`condition ? true_value : false_value`), 
 
 ### Syntax
 ```bash
-[ condition ] && command_if_true || command_if_false
+[[ condition ]] && command_if_true || command_if_false
 ```
 
 ### Example
 ```bash
 #!/bin/bash
 num=10
-[ ${num} -gt 5 ] && echo "Greater than 5" || echo "Less than or equal to 5"
+[[ ${num} -gt 5 ]] && echo "Greater than 5" || echo "Less than or equal to 5"
 ```
 
 ---

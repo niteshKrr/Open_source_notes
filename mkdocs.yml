@@ -157,5 +157,21 @@ nav:
           
 
 
+
+
   - Docker:
     - Welcome to Docker: docker/index.md
+      
+
+
+
+
+  - Kubernetes:
+    - Welcome to Kubernetes: kubernetes/index.md
+      
+    - Kubernetes Architecture:
+      - Home: kubernetes/architecture/index.md
+        
+
+    - Kubernetes Workflow:
+      - Home: kubernetes/workflow/index.md

@@ -168,6 +168,7 @@ nav:
 
   - Kubernetes:
     - Welcome to Kubernetes: kubernetes/index.md
+    - Basics Intro: kubernetes/introduction.md
       
     - Kubernetes Architecture:
       - Home: kubernetes/architecture/index.md

@@ -124,6 +124,27 @@ markdown_extensions:
 nav:
   - Home: index.md
     
+  - Python:
+    - Welcome to Python: Python/index.md
+      
+    - Programming Fundamentals:
+      - Home: Python/programming_fundamentals/index.md
+      - Essential Constructs:
+        - Variables & Data types: Python/programming_fundamentals/essential_construct/variables_datatypes.md
+        - Operators & Keywords: Python/programming_fundamentals/essential_construct/operators_keywords.md
+        - Input/Output: Python/programming_fundamentals/essential_construct/input_output.md
+      - Core Constructs:
+        - Conditions & Loops: Python/programming_fundamentals/core_construct/conditions_loops.md
+        - Functions: Python/programming_fundamentals/core_construct/functions.md
+      - Data structures:
+        - Lists & Tuples: Python/programming_fundamentals/data_structures/lists_tuples.md
+        - Sets & Dicts: Python/programming_fundamentals/data_structures/set_dicts.md
+        - Map, Filter, Reduce: Python/programming_fundamentals/data_structures/map_filter_reduce.md
+          
+
+
+
+    
   - Linux:
     - Welcome to Linux: linux/index.md
   
@@ -168,11 +189,4 @@ nav:
 
   - Kubernetes:
     - Welcome to Kubernetes: kubernetes/index.md
-    - Basics Intro: kubernetes/introduction.md
-      
-    - Kubernetes Architecture:
-      - Home: kubernetes/architecture/index.md
-        
-
-    - Kubernetes Workflow:
-      - Home: kubernetes/workflow/index.md
+    

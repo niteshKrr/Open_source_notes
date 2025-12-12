@@ -94,3 +94,17 @@ Output
 ```python
 25
 ```
+
+#### ✔ Lambda with `map()`
+
+```python
+nums = [1, 2, 3, 4]
+doubles = list(map(lambda x: x * 2, nums))
+print(doubles)
+```
+
+Output
+
+```python
+[2, 4, 6, 8]
+```

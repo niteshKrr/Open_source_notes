@@ -140,7 +140,8 @@ nav:
         - Lists & Tuples: Python/programming_fundamentals/data_structures/lists_tuples.md
         - Sets & Dicts: Python/programming_fundamentals/data_structures/set_dicts.md
         - Map, Filter, Reduce: Python/programming_fundamentals/data_structures/map_filter_reduce.md
-          
+      - OOPs:
+        - Classes & Objects: Python/programming_fundamentals/oops/classes_objects.md
 
 
 

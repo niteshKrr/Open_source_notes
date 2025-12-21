@@ -142,6 +142,11 @@ nav:
         - Map, Filter, Reduce: Python/programming_fundamentals/data_structures/map_filter_reduce.md
       - OOPs:
         - Classes & Objects: Python/programming_fundamentals/oops/classes_objects.md
+        - Inheritance: Python/programming_fundamentals/oops/inheritance.md
+      - Important to know:
+        - Abstract Base Class (ABC): Python/programming_fundamentals/important_to_know/abc.md
+        - Method Types & Decorators: Python/programming_fundamentals/important_to_know/method_types_decorators.md
+
 
 
 

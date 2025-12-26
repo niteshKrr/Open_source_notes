@@ -21,7 +21,7 @@
 ✔ Example
 
 ```python
-import threading
+from threading import Thread
 import time
 
 def calculate_square(nums):
@@ -37,15 +37,15 @@ def calculate_cube(nums):
 def main():
 
     nums = [1, 2, 3, 4, 5]
-    t1 = threading.Thread(target=calculate_square, args=(nums,))
-    t2 = threading.Thread(target=calculate_cube, args=(nums,))
+    t1 = Thread(target=calculate_square, args=(nums,))
+    t2 = Thread(target=calculate_cube, args=(nums,))
 
     t1.start()
     t2.start()
     t1.join()
     t2.join()
 
-    print("Done calculating squares and cubes.")
+    print("Done!")
 
 if __name__ == "__main__":
     main()
@@ -64,24 +64,24 @@ if __name__ == "__main__":
 ```python
 from concurrent.futures import ThreadPoolExecutor
 import time
+import os
 
-def calculate_square(nums):
-    for n in nums:
-        time.sleep(0.5)
-        print(f'Square of {n}: {n*n}')
+def calculate_square(n):
+    time.sleep(0.5)
+    print(f'Square of {n}: {n*n}')
+    print(f'Process ID: {os.getpid()}')
 
-def calculate_cube(nums):
-    for n in nums:
-        time.sleep(0.5)
-        print(f'Cube of {n}: {n*n*n}')
+def main():
+    nums = [1, 2, 3, 4, 5]
+    # Create a thread pool with 2 workers
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        # Submit two tasks to run in parallel
+        executor.map(calculate_square, nums)
 
+    print("Done!")
 
-nums = [1, 2, 3, 4, 5]
-# Create a thread pool with 2 workers
-with ThreadPoolExecutor(max_workers=2) as executor:
-    # Submit two tasks to run in parallel
-    executor.submit(calculate_square, nums)
-    executor.submit(calculate_cube, nums)
+if __name__ == "__main__":
+    main()
 ```
 
 👉 **Important to know?**

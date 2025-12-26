@@ -146,6 +146,11 @@ nav:
       - Important to know:
         - Abstract Base Class (ABC): Python/programming_fundamentals/important_to_know/abc.md
         - Method Types & Decorators: Python/programming_fundamentals/important_to_know/method_types_decorators.md
+    - Concurrency & Parallelism:
+      - Home: Python/concurrency_parallelism/index.md
+      - Multithreading_: Python/concurrency_parallelism/multithreading.md
+      - Multiprocessing_: Python/concurrency_parallelism/multiprocessing.md
+
 
 
 
